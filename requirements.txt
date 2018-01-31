@@ -1,0 +1,10 @@
+scipy
+matplotlib
+future
+pandas==0.19.2
+scikit-learn
+numpy
+readline
+rpy2==2.8.5
+category_encoders
+xgboost
