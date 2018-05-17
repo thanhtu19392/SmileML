@@ -4,7 +4,7 @@ import readline  # noqa: F401,E731 # needed, otherwise rpy2 won't work.
 from .utils import optional_import
 from .pipeline import TolerantLabelEncoder, ColumnsSelector, ColumnApplier, FillNaN
 from sklearn.pipeline import make_union, make_pipeline
-from sklearn,preprocessing import LabelEncoder
+from sklearn.preprocessing import LabelEncoder
 import pandas as pd
 import numpy as np
 import os

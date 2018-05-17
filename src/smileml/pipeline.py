@@ -14,7 +14,7 @@ class ColumnsSelector(BaseEstimator, TransformerMixin):
 
     def __init__(self, columns):
         assert isinstance(columns, list)
-       self.columns = columns
+        self.columns = columns
 
     def fit(self, X, y=None):
         return self
