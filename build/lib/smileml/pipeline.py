@@ -14,7 +14,7 @@ class ColumnsSelector(BaseEstimator, TransformerMixin):
 
     def __init__(self, columns):
         assert isinstance(columns, list)
-       self.columns = columns
+        self.columns = columns
 
     def fit(self, X, y=None):
         return self
@@ -22,9 +22,9 @@ class ColumnsSelector(BaseEstimator, TransformerMixin):
     def transform(self, X):
         return X[self.columns]
 
-#Class TolerantLE(LabelEncoder):
-#    def transform(self, y):
-#         return np.searchsorted(self.classes_, y)
+class TolerantLE(LabelEncoder):
+    def transform(self, y):
+        return np.searchsorted(self.classes_, y)
     
 class UniqueCountColumnSelector(BaseEstimator, TransformerMixin):
     """

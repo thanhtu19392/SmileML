@@ -21,12 +21,17 @@ def read(*names, **kwargs):
         encoding=kwargs.get('encoding', 'utf8')
     ).read()
 
+with open("README.md", "r") as fh:
+    long_description = fh.read()
 
 setup(
     name='smileml',
-    version='0.1.0',
+    version='0.1.2',
     license='MIT',
     description='Useful box',
+    long_description = long_description, 
+    long_description_content_type="text/markdown",
+    url = "https://github.com/thanhtu19392/SmileML",
     #long_description='%s\n%s' % (
         #re.compile('^.. start-badges.*^.. end-badges', re.M | re.S).sub('', read('README.rst')),
      #   re.sub(':[a-z]+:`~?(.*?)`', r'``\1``', read('CHANGELOG.rst'))

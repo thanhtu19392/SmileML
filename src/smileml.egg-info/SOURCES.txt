@@ -36,12 +36,16 @@ src/smileml/lime.py
 src/smileml/metrics.py
 src/smileml/pipeline.py
 src/smileml/pipelinebase.py
+src/smileml/stacking.py
 src/smileml/utils.py
 src/smileml.egg-info/PKG-INFO
 src/smileml.egg-info/SOURCES.txt
 src/smileml.egg-info/dependency_links.txt
 src/smileml.egg-info/not-zip-safe
 src/smileml.egg-info/top_level.txt
+src/smileml/feature_extraction/__init__.py
+src/smileml/feature_extraction/preprocessing.py
+src/smileml/feature_extraction/target_encode.py
 src/smileml/misc/__init__.py
 src/smileml/misc/googleapi.py
 src/smileml/ml/__init__.py
