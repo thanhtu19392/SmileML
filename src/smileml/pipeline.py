@@ -22,9 +22,9 @@ class ColumnsSelector(BaseEstimator, TransformerMixin):
     def transform(self, X):
         return X[self.columns]
 
-#Class TolerantLE(LabelEncoder):
-#    def transform(self, y):
-#         return np.searchsorted(self.classes_, y)
+class TolerantLE(LabelEncoder):
+    def transform(self, y):
+        return np.searchsorted(self.classes_, y)
     
 class UniqueCountColumnSelector(BaseEstimator, TransformerMixin):
     """
